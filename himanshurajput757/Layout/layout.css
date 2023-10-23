@@ -1,0 +1,83 @@
+*{
+    padding: 10px;
+    flex: 1 100%;
+    /* font-size: 2rem; */
+
+    /* flex-grow: 1;
+    flex-basis: 100%; */
+}
+.wrapper
+{
+    display: flex;
+    height: 500px;
+    flex-flow: row wrap;
+}
+ 
+.header
+{
+    background-color: aqua;
+    text-align: center;
+    /* height: 100px; */
+
+}
+.main
+{
+    background: rgb(105, 175, 246);
+    text-align: center;
+
+}
+.aside-1
+{
+    background-color: yellow;
+    text-align: center;
+}
+.aside-2
+{
+
+    background-color: brown;
+    text-align: center;
+    
+}
+.footer
+{
+    background-color: aquamarine;
+    text-align: center;
+}
+@media all and (min-width : 900px) {
+    .main
+    {
+        flex: 3;
+    }
+    .aside-1
+    {
+        order: 2;
+    }
+    .aside-2
+    {
+        order: 1;
+
+    }
+    .main
+    {
+        order: 2;
+    }
+    .footer
+    {
+        order: 4;
+    }  
+}
+@media all and (min-width : 700px) {
+    .aside
+    {
+        flex: 1;
+    }
+    
+}
+@media all and (min-width : 600px) 
+{
+    .aside
+    {
+        flex-flow: row;
+    }
+    
+}
